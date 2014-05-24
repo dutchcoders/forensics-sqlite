@@ -1,17 +1,12 @@
-forensics-sqlite
-================
-
-Dumps frames of the -wal (write ahead log) file of sqlite databases.
-
-Usage:
-======
-python ./test.py db.sqlite
-
-```python
 import struct
 import sys
 from forensics_sqlite import DB, WAL
 
+"""
+-wal write-ahead-log
+-shm wal-index (shared memory)
+"""
+		
 if __name__ == '__main__':
 	with open("{0}-wal".format(sys.argv[1]), 'r') as f:
 		wal = WAL(f)
@@ -41,4 +36,4 @@ if __name__ == '__main__':
 		version = { 1: "Legacy", 2: "WAL" }
 		print ("{0} {1} {2} {3}".format(db.signature, db.page_size, version[db.write_version], version[db.read_version]))
 		pass #main (f)
-```
+		
