@@ -3,14 +3,14 @@ forensics-sqlite
 
 Dumps frames of the -wal (write ahead log) file of sqlite databases.
 
-## usage:
+## usage
 python ./test.py db.sqlite
 
-## references:
+## references
 * http://sqlite.org/fileformat2.html
 * http://www.cclgroupltd.com/the-forensic-implications-of-sqlites-write-ahead-log/
 
-## sample:
+## sample
 ```python
 import struct
 import sys
