@@ -10,6 +10,7 @@ python ./test.py db.sqlite
 * http://sqlite.org/fileformat2.html
 * http://www.cclgroupltd.com/the-forensic-implications-of-sqlites-write-ahead-log/
 
+## sample:
 ```python
 import struct
 import sys
