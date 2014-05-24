@@ -1,7 +1,10 @@
 forensics-sqlite
 ================
 
-Dumps frames of the -wal (write ahead log) file of sqlite databases.
+Dumps frames of the -wal (write ahead log) file of sqlite databases. The write ahead log is being written every once in a while to the real database. Using the write ahead log it will be possible to do forensics analyses on the history of the database (eg. modified records, added records etc.
+
+SQLite databases are often used mobile applications. 
+
 
 ## usage
 python ./test.py db.sqlite
